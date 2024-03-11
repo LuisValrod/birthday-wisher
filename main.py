@@ -9,11 +9,11 @@ dfContacts = pd.read_csv('birthdays2.csv')
 # data.drop(index=0, inplace=True)
 # print(data)
 # dContacts = {
-#     'name': ['Luis Rodriguez', 'Luis Valrod', 'Conchi Perez', 'Luis Invento', 'Luis Gmail'],
-#     'email': ['luisrodriguezvalido@gmail.com', 'lvalrod@yahoo.com', 'phconchi@yahoo.es', 'luis_skull711@hotmail.com', 'lvalrod87@gmail.com'],
-#     'year': [1987, 1987, 1979, 1950, 1949],
-#     'month': [12, 3, 6, 3, 3],
-#     'day': [3, 11, 5, 11, 11]
+#     'name': ['Luis Valrod', 'Luis Invento', 'Luis Gmail'],
+#     'email': ['lvalrod@yahoo.com', 'luis_skull711@hotmail.com', 'lvalrod87@gmail.com'],
+#     'year': [1979, 1950, 1949],
+#     'month': [3, 3, 3],
+#     'day': [11, 11, 11]
 # }
 # dfContacts = pd.DataFrame(dContacts)
 # data = data._append(dfContacts, ignore_index=True)

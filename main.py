@@ -4,21 +4,21 @@ import datetime as dt
 from random import choice
 import smtplib
 # 1. Update the birthdays.csv
-data = pd.read_csv('birthdays.csv')
-data.drop(index=1, inplace=True)
-data.drop(index=0, inplace=True)
-print(data)
-dContacts = {
-    'name': ['Luis Rodriguez', 'Luis Valrod', 'Conchi Perez', 'Luis Invento', 'Luis Gmail'],
-    'email': ['luisrodriguezvalido@gmail.com', 'lvalrod@yahoo.com', 'phconchi@yahoo.es', 'luis_skull711@hotmail.com', 'lvalrod87@gmail.com'],
-    'year': [1987, 1987, 1979, 1950, 1949],
-    'month': [12, 3, 6, 3, 3],
-    'day': [3, 11, 5, 11, 11]
-}
-dfContacts = pd.DataFrame(dContacts)
-data = data._append(dfContacts, ignore_index=True)
-print(data)
-data.to_csv('birthdays2.csv', index=False)
+dfContacts = pd.read_csv('birthdays2.csv')
+# data.drop(index=1, inplace=True)
+# data.drop(index=0, inplace=True)
+# print(data)
+# dContacts = {
+#     'name': ['Luis Rodriguez', 'Luis Valrod', 'Conchi Perez', 'Luis Invento', 'Luis Gmail'],
+#     'email': ['luisrodriguezvalido@gmail.com', 'lvalrod@yahoo.com', 'phconchi@yahoo.es', 'luis_skull711@hotmail.com', 'lvalrod87@gmail.com'],
+#     'year': [1987, 1987, 1979, 1950, 1949],
+#     'month': [12, 3, 6, 3, 3],
+#     'day': [3, 11, 5, 11, 11]
+# }
+# dfContacts = pd.DataFrame(dContacts)
+# data = data._append(dfContacts, ignore_index=True)
+# print(data)
+# data.to_csv('birthdays2.csv', index=False)
 
 # 2. Check if today matches a birthday in the birthdays.csv
 
